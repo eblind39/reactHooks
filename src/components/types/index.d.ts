@@ -7,4 +7,9 @@ interface LabelRecord {
     label: string
 }
 
-export {Person, LabelRecord}
+interface ExtendedLabelRecord {
+    userId: number
+    records: LabelRecord[]
+}
+
+export {Person, LabelRecord, ExtendedLabelRecord}
