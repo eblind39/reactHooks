@@ -8,6 +8,7 @@ import {
 } from '@mui/material'
 import HomeIcon from '@mui/icons-material/Home'
 import StorageIcon from '@mui/icons-material/Storage';
+import BoltIcon from '@mui/icons-material/Bolt';
 
 import CategoryIcon from '@mui/icons-material/Category'
 import SourceIcon from '@mui/icons-material/Source'
@@ -48,6 +49,14 @@ const NavBar: React.FC = (): JSX.Element => {
                     </ListItemIcon>
                     <Link to="/usestate">
                         <Typography variant="inherit">useState</Typography>
+                    </Link>
+                </MenuItem>
+                <MenuItem>
+                    <ListItemIcon>
+                        <BoltIcon fontSize="small" />
+                    </ListItemIcon>
+                    <Link to="/useeffect">
+                        <Typography variant="inherit">useEffect</Typography>
                     </Link>
                 </MenuItem>
             </MenuList>

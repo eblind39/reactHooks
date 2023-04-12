@@ -1,5 +1,5 @@
 import React from "react";
-import WithNavBar from "../components/withnavbar";
+import WithNavBar from "../components/common/withnavbar";
 import UseState from "../components/useState";
 
 const UseStateContainer = () => {
