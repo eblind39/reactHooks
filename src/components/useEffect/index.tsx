@@ -3,6 +3,7 @@ import { LabelRecord } from "../types";
 import { myApi } from "../../data/myApi";
 import StandardUse from "./standard";
 import LifeCycle from "./lifecycle";
+import Subscription from "./subscriptions";
 
 const UseEffect = () => {
     return (
@@ -14,6 +15,8 @@ const UseEffect = () => {
             <StandardUse />
 
             <LifeCycle />
+
+            <Subscription />
         </React.Fragment>
     )
 }
