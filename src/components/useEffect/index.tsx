@@ -1,14 +1,28 @@
 import React, { useState, useEffect, useDebugValue } from "react";
+import { LabelRecord } from "../types";
+import { myApi } from "../../data/myApi";
 
 const UseEffect = () => {
     const [counter, setCounter] = useState<number>(0)
+    const [labelData, setLabelData] = useState<LabelRecord[]>([])
 
     useEffect(() => {
-        console.log('It executes in every render, also in the first one')
+        console.log('%cIt executes in every render, also in the first one', 'color: yellow; font-size: larger')
     })
 
     useEffect(() => {
-        console.log('It is invoked at the first render')
+        console.log('%cIt is invoked at the first render - component DidMount', 'color: green; font-size: larger')
+
+        async function fetchData() {
+            const dataLabel: LabelRecord[] = (await myApi.fakeFetch()) as LabelRecord[]
+            setLabelData(dataLabel)
+        }
+
+        fetchData()
+
+        return () => {
+            console.log('%cCalling component will unmount', 'color: red; font-size: larger')
+        }
     }, [])
 
     useEffect(() => {
@@ -21,7 +35,7 @@ const UseEffect = () => {
 
     return (
         <React.Fragment>
-            <h3>UseEffect</h3>
+            <h3>useEffect</h3>
 
             < br/>
 
@@ -32,6 +46,20 @@ const UseEffect = () => {
             >
                 Increment counter!
             </button>
+
+            <br />
+
+            {
+                labelData.length > 0 &&
+                <ul>
+                    {
+                        labelData.map(label => {
+                            if (label)
+                                return <li key={label.label}>{label.label}</li>
+                        })
+                    }
+                </ul>
+            }
         </React.Fragment>
     )
 }

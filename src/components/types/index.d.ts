@@ -3,4 +3,8 @@ interface Person {
     email: string
 }
 
-export {Person}
+interface LabelRecord {
+    label: string
+}
+
+export {Person, LabelRecord}
