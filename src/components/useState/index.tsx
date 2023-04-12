@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 
-const Counter = () => {
+const UseState = () => {
     const [counter, setCounter] = useState<number>(0)
+
+    // the previous line of code is equivalent to the following:
+    /*
+        const state = useState<number>(0)
+        const counter = state[0]
+        const setCounter = state[1]
+    */
 
     const handleClick = (evt: React.SyntheticEvent) => {
         setCounter(prevValue => prevValue + 1)
@@ -19,4 +26,4 @@ const Counter = () => {
     )
 }
 
-export default Counter;
+export default UseState;

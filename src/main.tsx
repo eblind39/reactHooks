@@ -1,18 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import App from './App'
-import Counter from './components/useState'
+import HomeContainer from './containers/HomeContainer'
+import UseStateContainer from './containers/UseStateContainer'
+import ErrorPage from './components/common/errorpage'
 import './index.css'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomeContainer />,
+    errorElement: <ErrorPage />,
   },
   {
-    path: "/counter",
-    element: <Counter />
+    path: "/usestate",
+    element: <UseStateContainer />
   },
 ])
 
