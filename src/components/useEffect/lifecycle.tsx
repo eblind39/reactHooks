@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { LabelRecord } from "../types";
+import { LabelRecord } from "../../types";
 import { myExtendedApi } from "../../data/myExtendedApi";
 
 const LifeCycle = () => {

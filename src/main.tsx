@@ -4,22 +4,27 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomeContainer from './containers/HomeContainer'
 import UseStateContainer from './containers/UseStateContainer'
 import UseEffectContainer from './containers/UseEffectContainer'
+import UseCallbackContainer from './containers/UseCallbackContainer'
 import ErrorPage from './components/common/errorpage'
 import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <HomeContainer />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/usestate",
+    path: '/usestate',
     element: <UseStateContainer />,
   },
   {
-    path: "/useeffect",
+    path: '/useeffect',
     element: <UseEffectContainer />,
+  },
+  {
+    path: '/usecallback',
+    element: <UseCallbackContainer />,
   },
 ])
 

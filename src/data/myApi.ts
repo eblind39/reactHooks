@@ -1,4 +1,4 @@
-import { LabelRecord } from "../components/types"
+import { LabelRecord } from "../types"
 
 const labeldata: LabelRecord[] = [
     {label: 'A'},

@@ -1,4 +1,4 @@
-import { ExtendedLabelRecord, LabelRecord } from "../components/types"
+import { ExtendedLabelRecord, LabelRecord } from "../types"
 
 const data: ExtendedLabelRecord[] = [
     { userId: 1, records: [{label: 'A'}, {label: 'B'}, {label: 'C'}, {label: 'D'}, {label: 'E'},] },

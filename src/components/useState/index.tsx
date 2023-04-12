@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Person } from "../types";
+import { Person } from "../../types";
 
 const UseState = () => {
     const [counter, setCounter] = useState<number>(0)

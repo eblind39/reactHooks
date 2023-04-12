@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useDebugValue } from "react";
-import { LabelRecord } from "../types";
+import { LabelRecord } from "../../types";
 import { myApi } from "../../data/myApi";
 import StandardUse from "./standard";
 import LifeCycle from "./lifecycle";
