@@ -8,6 +8,7 @@ import UseCallbackContainer from './containers/UseCallbackContainer'
 import ErrorPage from './components/common/errorpage'
 import './index.css'
 import UseMemoContainer from './containers/UseMemoContainer'
+import UseReducerContainer from './containers/UseReducerContainer'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: '/usememo',
     element: <UseMemoContainer />,
+  },
+  {
+    path: '/usereducer',
+    element: <UseReducerContainer />
   },
 ])
 

@@ -11,6 +11,7 @@ import StorageIcon from '@mui/icons-material/Storage';
 import BoltIcon from '@mui/icons-material/Bolt';
 import AdjustIcon from '@mui/icons-material/Adjust';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import ReduceCapacityIcon from '@mui/icons-material/ReduceCapacity';
 
 import CategoryIcon from '@mui/icons-material/Category'
 import SourceIcon from '@mui/icons-material/Source'
@@ -75,6 +76,14 @@ const NavBar: React.FC = (): JSX.Element => {
                     </ListItemIcon>
                     <Link to="/usememo">
                         <Typography variant="inherit">useMemo</Typography>
+                    </Link>
+                </MenuItem>
+                <MenuItem>
+                    <ListItemIcon>
+                        <ReduceCapacityIcon fontSize="small" />
+                    </ListItemIcon>
+                    <Link to="/usereducer">
+                        <Typography variant="inherit">useReducer</Typography>
                     </Link>
                 </MenuItem>
             </MenuList>
