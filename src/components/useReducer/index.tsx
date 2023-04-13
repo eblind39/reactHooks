@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import InitialIssueReducer from './initialissue'
 import WithReducer from "./withreducer";
+import ToDo from "./todo";
 
 const UseReducer = () => {
     return (
@@ -12,6 +13,8 @@ const UseReducer = () => {
             <InitialIssueReducer />
 
             <WithReducer />
+
+            <ToDo />
         </React.Fragment>
     )
 }

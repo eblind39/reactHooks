@@ -17,4 +17,16 @@ interface Food {
     name: string
 }
 
-export {Person, LabelRecord, ExtendedLabelRecord, Food}
+enum TodoStatus {
+    Active = 1,
+    Pending = 2,
+    Closed = 3
+}
+
+interface TODO {
+    id: number
+    title: string
+    status: TodoStatus
+}
+
+export {Person, LabelRecord, ExtendedLabelRecord, Food, TODO, TodoStatus}
