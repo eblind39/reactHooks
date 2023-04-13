@@ -1,19 +1,19 @@
 import { TODO } from "../../types"
 import { ADD_TODO, TOGGLE_TODO } from "./todoactiontypes"
-import { ActionReducerType } from "./todoreducers"
+import { TodoAction } from "./todoreducers"
 
-const actionAddTodo = ({id, title}: TODO): ActionReducerType => ({
+const actionAddTodo = ({id, title}: TODO): TodoAction => ({
     type: ADD_TODO,
     payload: {
         id,
         title,
         status: 1,
     } as TODO
-} as ActionReducerType)
+} as TodoAction)
 
-const actionToggleTodo = (id: number): ActionReducerType => ({
+const actionToggleTodo = (id: number): TodoAction => ({
     type: TOGGLE_TODO,
     payload: {id, } as TODO
-} as ActionReducerType)
+} as TodoAction)
 
 export { actionAddTodo, actionToggleTodo }

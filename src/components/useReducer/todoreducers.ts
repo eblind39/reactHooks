@@ -1,11 +1,11 @@
 import { TODO } from "../../types"
 
-export type ActionReducerType = {
+export type TodoAction = {
     type: string
     payload: TODO
 }
 
-const todoReducer = (state: TODO[], action: ActionReducerType) => {
+const todoReducer = (state: TODO[], action: TodoAction) => {
     if(action.type === 'ADD_TODO') {
         return [...state, action.payload]
     }

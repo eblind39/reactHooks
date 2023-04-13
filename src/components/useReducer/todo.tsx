@@ -1,6 +1,6 @@
 import React, { SyntheticEvent, useReducer, useState } from "react";
 import { todoInitialState } from "./todoinitialstate";
-import { ActionReducerType, todoReducer } from './todoreducers'
+import { TodoAction, todoReducer } from './todoreducers'
 import { actionAddTodo, actionToggleTodo } from "./todoactions";
 import { TODO } from '../../types/index';
 
@@ -15,12 +15,12 @@ const ToDo = () => {
     }
 
     const addTodo = () => {
-        dispatch(actionAddTodo({id: todos.length + 1, title: todoText} as TODO) as ActionReducerType)
+        dispatch(actionAddTodo({id: todos.length + 1, title: todoText} as TODO) as TodoAction)
         setTodoText('')
     }
 
     const toggleToDo = (id: number) => {
-        dispatch(actionToggleTodo(id) as ActionReducerType)
+        dispatch(actionToggleTodo(id) as TodoAction)
     }
 
     return (
