@@ -12,6 +12,7 @@ import BoltIcon from '@mui/icons-material/Bolt';
 import AdjustIcon from '@mui/icons-material/Adjust';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import ReduceCapacityIcon from '@mui/icons-material/ReduceCapacity';
+import BorderClearIcon from '@mui/icons-material/BorderClear';
 
 import CategoryIcon from '@mui/icons-material/Category'
 import SourceIcon from '@mui/icons-material/Source'
@@ -84,6 +85,14 @@ const NavBar: React.FC = (): JSX.Element => {
                     </ListItemIcon>
                     <Link to="/usereducer">
                         <Typography variant="inherit">useReducer</Typography>
+                    </Link>
+                </MenuItem>
+                <MenuItem>
+                    <ListItemIcon>
+                        <BorderClearIcon fontSize="small" />
+                    </ListItemIcon>
+                    <Link to="/usecontext">
+                        <Typography variant="inherit">useContext</Typography>
                     </Link>
                 </MenuItem>
             </MenuList>

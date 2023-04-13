@@ -9,6 +9,7 @@ import ErrorPage from './components/common/errorpage'
 import './index.css'
 import UseMemoContainer from './containers/UseMemoContainer'
 import UseReducerContainer from './containers/UseReducerContainer'
+import UseContextContainer from './containers/UseContextContainer'
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: '/usereducer',
     element: <UseReducerContainer />
+  },
+  {
+    path: "/usecontext",
+    element: <UseContextContainer />,
   },
 ])
 

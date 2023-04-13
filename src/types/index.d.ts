@@ -28,4 +28,14 @@ interface TODO {
     status: TodoStatus
 }
 
-export {Person, LabelRecord, ExtendedLabelRecord, Food, TODO, TodoStatus}
+interface ThemeStyles {
+    color: string
+    background: string
+}
+
+interface Theme {
+    name: string
+    theme: ThemeStyles
+}
+
+export {Person, LabelRecord, ExtendedLabelRecord, Food, TODO, TodoStatus, ThemeStyles, Theme}
