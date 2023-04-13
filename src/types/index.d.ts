@@ -19,8 +19,7 @@ interface Food {
 
 enum TodoStatus {
     Active = 1,
-    Pending = 2,
-    Closed = 3
+    Completed = 2
 }
 
 interface TODO {
