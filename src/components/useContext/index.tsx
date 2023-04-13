@@ -4,7 +4,7 @@ import CustomTheme from "./customtheme";
 const UseContext = () => {
     return (
         <React.Fragment>
-            <h3>useReducer</h3>
+            <h3>useContext</h3>
 
             <br />
 

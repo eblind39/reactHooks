@@ -10,6 +10,7 @@ import './index.css'
 import UseMemoContainer from './containers/UseMemoContainer'
 import UseReducerContainer from './containers/UseReducerContainer'
 import UseContextContainer from './containers/UseContextContainer'
+import UseRefContainer from './containers/UseRefContainer'
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/usecontext",
     element: <UseContextContainer />,
+  },
+  {
+    path: "/useref",
+    element: <UseRefContainer />,
   },
 ])
 

@@ -13,18 +13,7 @@ import AdjustIcon from '@mui/icons-material/Adjust';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import ReduceCapacityIcon from '@mui/icons-material/ReduceCapacity';
 import BorderClearIcon from '@mui/icons-material/BorderClear';
-
-import CategoryIcon from '@mui/icons-material/Category'
-import SourceIcon from '@mui/icons-material/Source'
-import MenuBookIcon from '@mui/icons-material/MenuBook'
-import GroupIcon from '@mui/icons-material/Group'
-import ColorLensIcon from '@mui/icons-material/ColorLens'
-import ImagesearchRollerIcon from '@mui/icons-material/ImagesearchRoller'
-import ManageSearchIcon from '@mui/icons-material/ManageSearch'
-import LoginIcon from '@mui/icons-material/Login'
-import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings'
-import BadgeIcon from '@mui/icons-material/Badge'
-import PhishingIcon from '@mui/icons-material/Phishing'
+import AllOutIcon from '@mui/icons-material/AllOut';
 import {Link} from 'react-router-dom'
 
 const NavBar: React.FC = (): JSX.Element => {
@@ -93,6 +82,14 @@ const NavBar: React.FC = (): JSX.Element => {
                     </ListItemIcon>
                     <Link to="/usecontext">
                         <Typography variant="inherit">useContext</Typography>
+                    </Link>
+                </MenuItem>
+                <MenuItem>
+                    <ListItemIcon>
+                        <AllOutIcon fontSize="small" />
+                    </ListItemIcon>
+                    <Link to="/useref">
+                        <Typography variant="inherit">useRef</Typography>
                     </Link>
                 </MenuItem>
             </MenuList>
