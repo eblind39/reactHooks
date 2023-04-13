@@ -10,6 +10,7 @@ import HomeIcon from '@mui/icons-material/Home'
 import StorageIcon from '@mui/icons-material/Storage';
 import BoltIcon from '@mui/icons-material/Bolt';
 import AdjustIcon from '@mui/icons-material/Adjust';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 import CategoryIcon from '@mui/icons-material/Category'
 import SourceIcon from '@mui/icons-material/Source'
@@ -66,6 +67,14 @@ const NavBar: React.FC = (): JSX.Element => {
                     </ListItemIcon>
                     <Link to="/usecallback">
                         <Typography variant="inherit">useCallback</Typography>
+                    </Link>
+                </MenuItem>
+                <MenuItem>
+                    <ListItemIcon>
+                        <ExitToAppIcon fontSize="small" />
+                    </ListItemIcon>
+                    <Link to="/usememo">
+                        <Typography variant="inherit">useMemo</Typography>
                     </Link>
                 </MenuItem>
             </MenuList>
