@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 interface ExampleProps {
     cb: () => void
@@ -26,7 +26,8 @@ const ExampleReRenderCB = ({cb} : ExampleProps)  => {
 const InitialIssue = () => {
     const [counter, setCounter] = useState<number>(0)
 
-    const handleExample = () => {}
+    // const handleExampleWithIssue = () => {}
+    const handleExample = useCallback(() => {}, [])
 
     const handleClick = () => setCounter(counter + 1)
 
@@ -35,6 +36,7 @@ const InitialIssue = () => {
             <h4>useCallback - Initial issue</h4>
             <label>Referential equality in JS</label>
 
+            {/* <ExampleReRenderCB cb={handleExampleWithIssue} /> */}
             <ExampleReRenderCB cb={handleExample} />
 
             <button onClick={handleClick}>Handle re render</button>

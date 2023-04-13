@@ -1,16 +1,13 @@
 import React from "react";
-import InitialIssue from "./initialissue";
 import FoodContainer from "./foodcontainer";
 
-const UseCallback = () => {
+const FoodCallback = () => {
     return (
         <React.Fragment>
-            <h3>useCallback</h3>
-
-            <InitialIssue />
+            <h4>Food Callback</h4>
             <FoodContainer />
         </React.Fragment>
     )
 }
 
-export default UseCallback
+export default FoodCallback

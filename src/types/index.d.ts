@@ -12,4 +12,9 @@ interface ExtendedLabelRecord {
     records: LabelRecord[]
 }
 
-export {Person, LabelRecord, ExtendedLabelRecord}
+interface Food {
+    id: number
+    name: string
+}
+
+export {Person, LabelRecord, ExtendedLabelRecord, Food}
