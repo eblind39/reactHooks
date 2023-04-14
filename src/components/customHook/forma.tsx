@@ -1,19 +1,12 @@
- import React, { SyntheticEvent, useState } from "react";
- import useForm from "../../hooks/useform";
+import React, { SyntheticEvent } from "react";
+import useForm from "../../hooks/useform";
 import { Customer } from "../../types";
 
- const Form = () => {
-    const [form, setForm] = useState<Customer>({
+const FormA = () => {
+    const [form, setForm] = useForm({
         name: '',
         age: 0,
-    })
-
-    const handleChange = (event: SyntheticEvent) => {
-        const target: HTMLInputElement = event.target as HTMLInputElement
-        const value: string = target.value
-        const name: string = target.name
-        setForm({...form, [name]: value})
-    }
+    } as Customer)
 
     const handleSubmit = (event: SyntheticEvent) => {
         const target: HTMLFormElement = event.target as HTMLFormElement
@@ -29,7 +22,7 @@ import { Customer } from "../../types";
                     type="text"
                     name="name"
                     value={form.name}
-                    onChange={handleChange}
+                    onChange={setForm}
                 />
             </p>
             <p>
@@ -38,7 +31,7 @@ import { Customer } from "../../types";
                     type="number"
                     name="age"
                     value={form.age}
-                    onChange={handleChange}
+                    onChange={setForm}
                 />
             </p>
             <div>
@@ -46,6 +39,6 @@ import { Customer } from "../../types";
             </div>
         </form>
     )
- }
+}
 
- export default Form
+export default FormA

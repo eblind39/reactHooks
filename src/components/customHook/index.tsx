@@ -1,7 +1,8 @@
 import React from "react";
 import Timer from "./timer";
 import useTimer from "../../hooks/myhook";
-import Form from "./Form";
+import Form from "./form";
+import FormA from "./forma";
 
 const CustomHook = () => {
 
@@ -19,6 +20,10 @@ const CustomHook = () => {
             <br />
             
             <Form />
+
+            <br />
+
+            <FormA />
         </React.Fragment>
     )
 }
