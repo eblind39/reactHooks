@@ -14,6 +14,7 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import ReduceCapacityIcon from '@mui/icons-material/ReduceCapacity';
 import BorderClearIcon from '@mui/icons-material/BorderClear';
 import AllOutIcon from '@mui/icons-material/AllOut';
+import TuneIcon from '@mui/icons-material/Tune';
 import {Link} from 'react-router-dom'
 
 const NavBar: React.FC = (): JSX.Element => {
@@ -90,6 +91,14 @@ const NavBar: React.FC = (): JSX.Element => {
                     </ListItemIcon>
                     <Link to="/useref">
                         <Typography variant="inherit">useRef</Typography>
+                    </Link>
+                </MenuItem>
+                <MenuItem>
+                    <ListItemIcon>
+                        <TuneIcon fontSize="small" />
+                    </ListItemIcon>
+                    <Link to="/customhook">
+                        <Typography variant="inherit">customHook</Typography>
                     </Link>
                 </MenuItem>
             </MenuList>

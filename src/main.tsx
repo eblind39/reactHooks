@@ -11,6 +11,7 @@ import UseMemoContainer from './containers/UseMemoContainer'
 import UseReducerContainer from './containers/UseReducerContainer'
 import UseContextContainer from './containers/UseContextContainer'
 import UseRefContainer from './containers/UseRefContainer'
+import CustomHookContainer from './containers/CustomHookContainer'
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "/useref",
     element: <UseRefContainer />,
+  },
+  {
+    path: "/customhook",
+    element: <CustomHookContainer />,
   },
 ])
 

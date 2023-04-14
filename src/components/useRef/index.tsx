@@ -1,5 +1,6 @@
 import React from "react";
 import FormSample from "./formsample";
+import InstanceVar from "./instancevar";
 
 const UseRef = () => {
     return (
@@ -9,6 +10,8 @@ const UseRef = () => {
             <br />
 
             <FormSample />
+
+            <InstanceVar />
         </React.Fragment>
     )
 }
