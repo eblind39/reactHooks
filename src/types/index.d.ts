@@ -38,4 +38,9 @@ interface Theme {
     theme: ThemeStyles
 }
 
-export {Person, LabelRecord, ExtendedLabelRecord, Food, TODO, TodoStatus, ThemeStyles, Theme}
+interface Customer {
+    name: string
+    age: number
+}
+
+export {Person, LabelRecord, ExtendedLabelRecord, Food, TODO, TodoStatus, ThemeStyles, Theme, Customer}
